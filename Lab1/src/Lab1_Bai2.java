@@ -19,7 +19,7 @@ public class Lab1_Bai2 {
         double dai = scanner.nextDouble();
         System.out.println("Chiều rộng hình chữ nhật: ");
         double rong = scanner.nextDouble();
-        
+        //Tính chu vi, diên tích, cạnh nhỏ nhất
         double chuvi = (dai + rong) * 2;
         double dientich = dai * rong;
         double canhnhonhat = Math.min(dai, rong);

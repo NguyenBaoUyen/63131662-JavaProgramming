@@ -16,7 +16,7 @@ public class Lab1_Bai4 {
 		 Scanner scanner = new Scanner(System.in);
 
 	        // Nhập các hệ số 
-	        System.out.print("Nhập hệ số a: ");
+	        System.out.print("Nhập hệ số a : ");
 	        double a = scanner.nextDouble();
 
 	        System.out.print("Nhập hệ số b: ");
@@ -26,7 +26,7 @@ public class Lab1_Bai4 {
 	        double c = scanner.nextDouble();
 
 	        // Tính delta
-	        double delta = b * b - 4 * a * c;
+	        double delta = Math.pow(b,2) - 4 * a * c;
 
 	        // Kiểm tra giá trị delta để tính căn delta
 	        if (delta >= 0) {

@@ -19,9 +19,9 @@ public class Lab1_Bai1 {
         System.out.print("Họ và tên: ");
         String hoTen = scanner.nextLine();
 
-        System.out.print("Điểm TB: ");
+        System.out.print("Điểm trung bình: ");
         double diemTB = scanner.nextDouble();
-        //in tên và điểm sinh viên
+        //xuất tên và điểm sinh viên
         System.out.printf("%s %.2f điểm", hoTen, diemTB); 
         scanner.close();
 	}

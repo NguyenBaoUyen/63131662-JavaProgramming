@@ -21,8 +21,8 @@ public class Lab1_Bai3 {
 		double Vlapphuong = Math.pow(canh,3);
 		System.out.println("Thể tích lập phương: " + Vlapphuong );
 		
-		//the tich khoi chu nhat
-		System.out.println("Chiều dài khối lập phương: ");
+		//Thể tich khoi chu nhat
+		System.out.println("Chiều dài khối lập phương là: ");
 		double dai = scanner.nextDouble();
 		System.out.println("Chiều rộng khối lập phương: ");
 		double rong = scanner.nextDouble();
