@@ -28,9 +28,8 @@ public class Lab1_Bai4 {
 	        // Tính delta
 	        double delta = b * b - 4 * a * c;
 
-	        // Kiểm tra giá trị delta để xác định xem có thể tính căn delta không
+	        // Kiểm tra giá trị delta để tính căn delta
 	        if (delta >= 0) {
-	            // Tính căn delta và xuất kết quả
 	            double canDelta = Math.sqrt(delta);
 	            System.out.println("Căn delta là: " + canDelta);
 	        } else {

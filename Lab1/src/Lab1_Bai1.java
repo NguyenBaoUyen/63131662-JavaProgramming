@@ -21,7 +21,7 @@ public class Lab1_Bai1 {
 
         System.out.print("Điểm TB: ");
         double diemTB = scanner.nextDouble();
-
+        //in tên và điểm sinh viên
         System.out.printf("%s %.2f điểm", hoTen, diemTB); 
         scanner.close();
 	}

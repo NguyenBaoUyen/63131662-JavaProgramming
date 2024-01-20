@@ -14,11 +14,13 @@ public class Lab1_Bai3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
+		
 		//the thich khoi lap phuong
 		System.out.println("Cạnh khối lập phương: ");
 		double canh = scanner.nextDouble();
 		double Vlapphuong = Math.pow(canh,3);
 		System.out.println("Thể tích lập phương: " + Vlapphuong );
+		
 		//the tich khoi chu nhat
 		System.out.println("Chiều dài khối lập phương: ");
 		double dai = scanner.nextDouble();
