@@ -17,7 +17,7 @@ public class Lab1_Bai2 {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Chiều dài hình chữ nhật: ");
         double dai = scanner.nextDouble();
-        System.out.println("Chiều rông hình chữ nhật: ");
+        System.out.println("Chiều rộng hình chữ nhật: ");
         double rong = scanner.nextDouble();
         
         double chuvi = (dai + rong) * 2;
