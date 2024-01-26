@@ -1,16 +1,5 @@
-/**
- * 
- */
-
-/**
- * 
- */
 import java.util.Scanner;
 public class Lab2_Bai2 {
-
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		  Scanner scanner = new Scanner(System.in);
@@ -46,8 +35,6 @@ public class Lab2_Bai2 {
 	                System.out.println("Nghiệm thứ hai của phương trình là: " + x2);
 	            }
 	        }
-
 	        scanner.close();
 	}
-
 }
