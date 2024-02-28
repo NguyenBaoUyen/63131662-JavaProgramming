@@ -1,10 +1,4 @@
-/**
- * 
- */
 
-/**
- * 
- */
 import java.util.Scanner;
 public class Lab1_Bai4 {
 
