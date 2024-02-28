@@ -17,6 +17,10 @@ public class ManHinhTinhToan extends JFrame {
 	private JTextField txtA;
 	private JTextField txtB;
 	private JTextField txtKetQua;
+	private JButton btnCong;
+	private JButton btnTru;
+	private JButton btnNhan;
+	private JButton btnChia;
 	public ManHinhTinhToan() {
 		setFont(new Font("Dialog", Font.PLAIN, 16));
 		setTitle("Chương trình Tính Toán đơn giản");
@@ -49,44 +53,6 @@ public class ManHinhTinhToan extends JFrame {
 		txtB.setBounds(183, 33, 228, 33);
 		contentPane.add(txtB);
 		
-		JButton btnCong = new JButton("Cộng");
-		btnCong.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				//code xu ly
-				HamXuLyCong();
-			}
-
-			private void HamXuLyCong() {
-				// TODO Auto-generated method stub
-				
-			}
-		});
-		btnCong.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		btnCong.setBounds(26, 171, 89, 23);
-		contentPane.add(btnCong);
-		
-		
-		JButton btnTru = new JButton("Trừ");
-		btnTru.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				//Code xu ly tru
-				HamXuLyTru();
-			}
-		});
-		btnTru.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		btnTru.setBounds(125, 169, 89, 23);
-		contentPane.add(btnTru);
-				
-		JButton btnNhan = new JButton("Nhân");
-		btnNhan.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		btnNhan.setBounds(224, 169, 89, 23);
-		contentPane.add(btnNhan);
-		
-		JButton btnChia = new JButton("Chia");
-		btnChia.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		btnChia.setBounds(323, 169, 89, 23);
-		contentPane.add(btnChia);
-		
 		JLabel lblKtQu = new JLabel("Kết quả tính toán:");
 		lblKtQu.setEnabled(false);
 		lblKtQu.setFont(new Font("Tahoma", Font.PLAIN, 16));
@@ -100,33 +66,108 @@ public class ManHinhTinhToan extends JFrame {
 		txtKetQua.setBounds(183, 212, 228, 33);
 		contentPane.add(txtKetQua);
 		
+		btnCong = new JButton("Cộng");
+		btnCong.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//Xử lý cộng
+				//Viết lệnh ở một thủ tục/hàm rồi gọi ở đây
+				HamXuLyCong();
+			}
+		});
+		btnCong.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnCong.setBounds(26, 164, 89, 23);
+		contentPane.add(btnCong);
+		
+		btnTru = new JButton("Trừ");
+		btnTru.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//Xử lý cộng
+				//Viết lệnh ở một thủ tục/hàm rồi gọi ở đây
+				HamXuLyTru();
+			}
+		});
+		btnTru.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnTru.setBounds(131, 164, 89, 23);
+		contentPane.add(btnTru);
+		
+		btnNhan = new JButton("Nhân");
+		btnNhan.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//Xử lý cộng
+				//Viết lệnh ở một thủ tục/hàm rồi gọi ở đây
+				HamXuLyNhan();
+			}
+		});
+		btnNhan.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnNhan.setBounds(238, 164, 89, 23);
+		contentPane.add(btnNhan);
+		
+		btnChia = new JButton("Chia");
+		btnChia.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//Xử lý cộng
+				//Viết lệnh ở một thủ tục/hàm rồi gọi ở đây
+				HamXuLyChia();
+			}
+			
+		});
+		btnChia.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnChia.setBounds(347, 164, 89, 23);
+		contentPane.add(btnChia);
+		
 		
 	
 		
 				
 		
 	}//het ham tao
-	void HamXyLyCong() {
-		//Lấy du lieu tu dieu kien
-		String str_soA=txtA.getText();
-		String str_soB=txtB.getText();
-		double soA = Double.parseDouble(str_soA);
-		double soB = Double.parseDouble(str_soB);
-		//Tinh toan
-		double tong= soA+soB;
-		//Dua ra hien thi len dieu khien
-		txtKetQua.setText(String.valueOf(tong));
+	void HamXuLyCong() {
+		//Lấy dữ liệu từ điều khiển
+		String Str_SoA = txtA.getText();
+		String Str_SoB = txtB.getText();
+		//Chuyển kiều
+		double SoA = Double.parseDouble(Str_SoA);
+		double SoB = Double.parseDouble(Str_SoB);
+		//Tính toán
+		double Tong = SoA + SoB;
+		//Đưa ra hiển thị lên điều khiển
+		txtKetQua.setText(String.valueOf(Tong));
 	}
 	void HamXuLyTru() {
-		//Lấy du lieu tu dieu kien
-				String str_soA=txtA.getText();
-				String str_soB=txtB.getText();
-				double soA = Double.parseDouble(str_soA);
-				double soB = Double.parseDouble(str_soB);
-				//Tinh toan
-				double tong= soA-soB;
-				//Dua ra hien thi len dieu khien
-				txtKetQua.setText(String.valueOf(tong));
-		
+		//Lấy dữ liệu từ điều khiển
+		String Str_SoA = txtA.getText();
+		String Str_SoB = txtB.getText();
+		//Chuyển kiều
+		double SoA = Double.parseDouble(Str_SoA);
+		double SoB = Double.parseDouble(Str_SoB);
+		//Tính toán
+		double Hieu = SoA - SoB;
+		//Đưa ra hiển thị lên điều khiển
+		txtKetQua.setText(String.valueOf(Hieu));
 	}
+	void HamXuLyNhan() {
+		//Lấy dữ liệu từ điều khiển
+		String Str_SoA = txtA.getText();
+		String Str_SoB = txtB.getText();
+		//Chuyển kiều
+		double SoA = Double.parseDouble(Str_SoA);
+		double SoB = Double.parseDouble(Str_SoB);
+		//Tính toán
+		double Tich = SoA * SoB;
+		//Đưa ra hiển thị lên điều khiển
+		txtKetQua.setText(String.valueOf(Tich));
+	}
+	void HamXuLyChia() {
+		//Lấy dữ liệu từ điều khiển
+		String Str_SoA = txtA.getText();
+		String Str_SoB = txtB.getText();
+		//Chuyển kiều
+		double SoA = Double.parseDouble(Str_SoA);
+		double SoB = Double.parseDouble(Str_SoB);
+		//Tính toán
+		double Thuong = SoA / SoB;
+		//Đưa ra hiển thị lên điều khiển
+		txtKetQua.setText(String.valueOf(Thuong));
+	}
+	
 }
