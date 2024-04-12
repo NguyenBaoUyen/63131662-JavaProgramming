@@ -1,5 +1,5 @@
 import java.util.Scanner; 
-public class Lab4_Bai1 {
+public class Bai1 {
 
 	public class SanPham {
 	    // Thuộc tính
